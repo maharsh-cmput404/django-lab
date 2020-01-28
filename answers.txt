@@ -1,0 +1,17 @@
+1) https://github.com/maharsh-cmput404/django-lab
+2) It shows a congrats message on localhost:8000
+3) It shows an error when accessing /. When accessing /polls it shows a greeting message that we are at the polls index.
+4) Migrations apply the changes that we make to the models to the actual database schema.
+5) A page appears that allows us to add choices and questions. The custom models that we created with their fields are editable on this 
+ page as well. 
+
+6) /polls/38 shows "You're looking at question 38."
+/polls/38/results shows "You're looking at the results of question 38."
+/polls/38/vote shows "You're voting on question 38."
+
+If a string is used instead of a number, it gives a 404. To circumvent this, 
+we can change the pattern to "<question_id>/vote/" instead of "<int:question_id>/vote/"
+and it will support all alphanumeric types.
+
+7) If the project structure changes, all the hardcoded links would need to be changed 
+so it is a bad idea to hardcode it.
