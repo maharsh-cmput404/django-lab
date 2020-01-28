@@ -15,3 +15,6 @@ and it will support all alphanumeric types.
 
 7) If the project structure changes, all the hardcoded links would need to be changed 
 so it is a bad idea to hardcode it.
+
+8) The old way has a lot of duplication of code. All are getting data from the database
+and then displaying it.
